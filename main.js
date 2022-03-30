@@ -12,17 +12,32 @@ let products = [
         price: 69,
         inCart: 0,
     }
-]
+];
 
 for (let i=0; i< carts.length; i++){
     carts[i].addEventListener('click', () => {
         cartNumber();
     })
 }
+function onLoadCartNumber(){
+    let productNumber = localStorage.getItem('cartNumber');
+    if(productNumber){
+        document.querySelector('.cart span').textContent = productNumber;
+    }
+}
 
 function cartNumber(){
     let productNumber = localStorage.getItem('cartNumber');
-    console.log(productNumber)
-    productNumber = parseInt(productNumber)
-    localStorage.setItem('cartNumber', 1);
+
+    productNumber = parseInt(productNumber);
+
+    if (productNumber){
+        localStorage.setItem('cartNumber', productNumber + 1);
+        document.querySelector('.cart span').textContent = productNumber + 1;
+    } else{
+        localStorage.setItem('cartNumber',1);
+        document.querySelector('.cart span').textContent = 1;
+    }
 }
+
+onLoadCartNumber();
