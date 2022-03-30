@@ -50,6 +50,18 @@ nav li span {
 }
 li a {
     padding: 5px;
-    background-color: #fff;
+    background-color: rgb(47, 0, 255);
     text-decoration: none;;
-}   
+}
+
+.cart ion-icon {
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+}
+ .cart a {
+     background-color: Oroyalblue;
+     color: rgb(255, 255, 255);
+     cursor: pointer;
+     text-decoration: none;
+}
