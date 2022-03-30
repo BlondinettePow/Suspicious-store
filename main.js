@@ -43,13 +43,24 @@ function cartNumber(product){
 }
 
 function setItems(product){
-    console.log("sex");
-    console.log("my product is ", product);
-    product.inCart = 1;
+    let cartItems = localStorage.getItem('productsInCart');
+    cartItems= JSON.parse(cartItems);
 
-    let cartItems = {
-        [product.tag]: product
+    if(cartItems !== null){
+        if(cartItems[product.tag] == undefined) {
+            cartItems = {
+                ...cartItems,
+                [product.tag]: product
+            }
+        }
+        cartItems[product.tag].inCart += 1;
+    } else{
+        product.inCart = 1;
+        cartItems = {
+            [product.tag]: product
+        }
     }
+    
 
     localStorage.setItem('productsInCart', JSON.stringify(cartItems));
 }
