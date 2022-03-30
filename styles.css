@@ -50,7 +50,7 @@ nav li span {
 }
 li a {
     padding: 5px;
-    background-color: rgb(47, 0, 255);
+    background-color: rgb(255, 255, 255);
     text-decoration: none;;
 }
 
@@ -59,8 +59,8 @@ li a {
     font-size: 20px;
     padding-right: 5px;
 }
- .cart a {
-     background-color: Oroyalblue;
+.cart a {
+     background-color: royalblue;
      color: rgb(255, 255, 255);
      cursor: pointer;
      text-decoration: none;
