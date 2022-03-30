@@ -72,4 +72,29 @@ li a {
     flex-wrap: Wwrap;
     margin-top: 50px;
     padding-bottom: 100px;;
- }
+}
+
+.products {
+    margin-right: 20px;
+    margin-left: 20px;
+    position: center;
+    overflow: hidden;
+}
+
+.add-cart {
+    position: absolute;
+    width: 100%;
+     background-color: darkgrey;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.products:hover .cart1,
+.products:hover .cart2 {
+   bottom: 50px;
+   opacity: 1;
+   padding: 10px;
+   text-decoration: none;
+}
