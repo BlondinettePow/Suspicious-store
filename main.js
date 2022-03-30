@@ -4,19 +4,19 @@ let products = [
         name: 'gold monkey',
         tag: 'gmonkey',
         price: 150,
-        inCart: 0,
+        inCart: 0
     },
     {
         name: 'human one',
         tag: 'humanone',
         price: 69,
-        inCart: 0,
+        inCart: 0
     }
 ];
 
-for (let i=0; i< carts.length; i++){
+for (let i=0; i < carts.length; i++){
     carts[i].addEventListener('click', () => {
-        cartNumber();
+        cartNumber(products[i]);
     })
 }
 function onLoadCartNumber(){
@@ -26,7 +26,8 @@ function onLoadCartNumber(){
     }
 }
 
-function cartNumber(){
+function cartNumber(product){
+    console.log("product clicked: ", product);
     let productNumber = localStorage.getItem('cartNumber');
 
     productNumber = parseInt(productNumber);
@@ -38,6 +39,19 @@ function cartNumber(){
         localStorage.setItem('cartNumber',1);
         document.querySelector('.cart span').textContent = 1;
     }
+    setItems(product)
+}
+
+function setItems(product){
+    console.log("sex");
+    console.log("my product is ", product);
+    product.inCart = 1;
+
+    let cartItems = {
+        [product.tag]: product
+    }
+
+    localStorage.setItem('productsInCart', JSON.stringify(cartItems));
 }
 
 onLoadCartNumber();
