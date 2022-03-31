@@ -121,11 +121,22 @@ li a {
     display: flex;
     justify-content: flex-start;
     border-bottom: 4px solid lightgray;
+    margin: 0 auto;
 }
 .products-title{
-    width: 45;
+    width: 45%;
 }
 
 .price{
     width: 15%;
+    border-bottom: 4px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
 }
