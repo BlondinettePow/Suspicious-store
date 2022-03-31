@@ -15,7 +15,7 @@ let products = [
     {
         name: 'body guard',
         tag: 'bodyguard',
-        price: 130,
+        price: 129.99,
         inCart: 0
     }
 ];
@@ -72,8 +72,12 @@ function setItems(product){
     localStorage.setItem('productsInCart', JSON.stringify(cartItems));
 }
 
-function totalCost(){
+function totalCost(product){
+    console.log("sex", product.price);
+    let cartCost = localStorage.getItem("totalCost");
 
+    
+    localStorage.setItem("toalCost", product.price);
 }
 
 onLoadCartNumber();
