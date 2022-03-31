@@ -17,6 +17,7 @@ let products = [
 for (let i=0; i < carts.length; i++){
     carts[i].addEventListener('click', () => {
         cartNumber(products[i]);
+        totalCost(products[i])
     })
 }
 function onLoadCartNumber(){
@@ -63,6 +64,10 @@ function setItems(product){
     
 
     localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+}
+
+function totalCost(){
+
 }
 
 onLoadCartNumber();
