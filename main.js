@@ -11,12 +11,19 @@ let products = [
         tag: 'humanone',
         price: 69,
         inCart: 0
+    },
+    {
+        name: 'body guard',
+        tag: 'bodyguard',
+        price: 130,
+        inCart: 0
     }
 ];
 
 for (let i=0; i < carts.length; i++){
     carts[i].addEventListener('click', () => {
         cartNumber(products[i]);
+        totalCost(products[i])
     })
 }
 function onLoadCartNumber(){
@@ -63,6 +70,10 @@ function setItems(product){
     
 
     localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+}
+
+function totalCost(){
+
 }
 
 onLoadCartNumber();
