@@ -66,7 +66,8 @@ li a {
     text-decoration: none;
 }
 
-.container {
+.container,
+.products-container {
     display: flex;
     justify-content: center;
     flex-wrap: Wwrap;
@@ -105,4 +106,26 @@ li a {
     margin-left: 0px 0px 0px 30px;
     width: 450px;
     height: 350px;
+}
+
+/*---------CART PAGE ------------*/
+.products-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.products-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+}
+.products-title{
+    width: 45;
+}
+
+.price{
+    width: 15%;
 }
