@@ -99,3 +99,10 @@ li a {
    padding: 10px;
    text-decoration: none;
 }
+
+.prodpics{
+    float: left;
+    margin-left: 0px 0px 0px 30px;
+    width: 450px;
+    height: 350px;
+}
