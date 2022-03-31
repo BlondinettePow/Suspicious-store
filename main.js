@@ -75,9 +75,12 @@ function setItems(product){
 function totalCost(product){
     console.log("sex", product.price);
     let cartCost = localStorage.getItem("totalCost");
-
-    
-    localStorage.setItem("toalCost", product.price);
+    cartCost = parseInt(cartCost);
+    if(cartCost !=null){
+        localStorage.setItem("toalCost", cartCost + product.price);
+    }else{
+        localStorage.setItem("toalCost", product.price);
+    }
 }
 
 onLoadCartNumber();
