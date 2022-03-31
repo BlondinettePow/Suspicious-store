@@ -15,7 +15,7 @@ let products = [
     {
         name: 'body guard',
         tag: 'bodyguard',
-        price: 129.99,
+        price: 130,
         inCart: 0
     }
 ];
@@ -73,13 +73,13 @@ function setItems(product){
 }
 
 function totalCost(product){
-    console.log("sex", product.price);
-    let cartCost = localStorage.getItem("totalCost");
-    cartCost = parseInt(cartCost);
-    if(cartCost !=null){
-        localStorage.setItem("toalCost", cartCost + product.price);
-    }else{
-        localStorage.setItem("toalCost", product.price);
+
+    let cartCost = localStorage.getItem('totalCost');
+    if(cartCost != null){
+        cartCost = parseInt(cartCost);
+        localStorage.setItem('totalCost', cartCost+product.price);
+    } else{
+        localStorage.setItem('totalCost', product.price);
     }
 }
 
