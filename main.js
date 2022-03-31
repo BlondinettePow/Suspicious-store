@@ -11,6 +11,12 @@ let products = [
         tag: 'humanone',
         price: 69,
         inCart: 0
+    },
+    {
+        name: 'body guard',
+        tag: 'bodyguard',
+        price: 130,
+        inCart: 0
     }
 ];
 

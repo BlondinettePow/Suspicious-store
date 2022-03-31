@@ -92,7 +92,8 @@ li a {
 }
 
 .products:hover .cart1,
-.products:hover .cart2 {
+.products:hover .cart2,
+.products:hover .cart3 {
    bottom: 50px;
    opacity: 1;
    padding: 10px;
