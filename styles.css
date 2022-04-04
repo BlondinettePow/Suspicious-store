@@ -229,3 +229,14 @@ li a {
     font-size: 60px;
     color: rgb(255, 0, 0);
 }
+.remarque{
+    color: red;
+    font-size: small;
+}
+.Finaltext{
+    text-align: center;
+    font-size: 75px;
+    margin-top: 200px;
+    color: blue;
+
+}
