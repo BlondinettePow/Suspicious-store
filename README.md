@@ -1,7 +1,1 @@
-# NFTSHOPXDXD
-LUL
-Dont care , didnt ask + ratio
-SEX
-ivvyvvvvvvv
-anthony sucks lol
-C'est faux petite bite
+# suspicious store
