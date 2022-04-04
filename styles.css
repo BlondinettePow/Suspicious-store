@@ -167,10 +167,20 @@ li a {
 }
 
 /*---------Desc+About pages ------------*/
-.monkeydescimg{
+.descimg{
     width: auto;
     height: auto;
     margin-left: 15px;
+}
+.descimg2{
+    width: auto;
+    height: auto;
+    margin-left: 25px;
+}
+.descimg3{
+    width: auto;
+    height: auto;
+    margin-left: 0px;
 }
 .descprix{
     float: right;
@@ -179,10 +189,38 @@ li a {
     font-size:100px;
     color: red;
 }
+.descprix2{
+    float: right;
+    margin: 0px 500px;
+    margin-top: 65px;
+    font-size:100px;
+    color: red;
+}
+.descprix3{
+    float: right;
+    margin: 0px 200px;
+    margin-top: 15px;
+    font-size:100px;
+    color: red;
+}
 .descparagraph{
     float: right;
     margin: 0px 500px;
     margin-top: -300px;
+    font-size:28px;
+    color: blue;
+}
+.descparagraph2{
+    float: right;
+    margin: 0px 450px;
+    margin-top: -250px;
+    font-size:28px;
+    color: blue;
+}
+.descparagraph3{
+    float: right;
+    margin: 0px 200px;
+    margin-top: -340px;
     font-size:28px;
     color: blue;
 }
