@@ -139,25 +139,25 @@ li a {
     margin: 0, auto;
 }
 .product-title {
-    width: 15%;
-    margin-left: auto;
+    width: 45%;
 }
 .price {
-    width: 15%;
+    width: 30%;
+    border-bottom: 1px solid lightgray;
     display: flex;
-    align-items: top;
-    margin-left: auto;
+    align-items: center;
  }
  .quantity {
     width: 30%;
+    border-bottom: 1px solid lightgray;
     display: flex;
-    align-items: top;
+    align-items: center;
  }
 .total {
     width: 10%;
+    border-bottom: 1px solid lightgray;
     display: flex;
-    align-items: top;
-    margin-left: auto;
+    align-items: center;
 }
 .prodpicscart{
     float: left;
