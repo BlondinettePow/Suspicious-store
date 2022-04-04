@@ -108,6 +108,14 @@ li a {
     height: 350px;
 }
 
+.prodpics2{
+    float: left;
+    margin-left: 0px 0px 0px 130px ;
+    width: auto;
+    height: auto;
+
+
+}
 /*---------CART PAGE ------------*/
 .products-container {
     max-width: 650px;
