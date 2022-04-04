@@ -82,5 +82,5 @@ function totalCost(product){
         localStorage.setItem('totalCost', product.price);
     }
 }
-//test
+//test2
 onLoadCartNumber();
