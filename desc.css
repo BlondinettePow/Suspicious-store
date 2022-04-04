@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.monkeydescimg{
+    width: auto;
+    height: auto;
+    margin-left: 25px;
+}
+.descprix{
+    float: right;
+    margin: 50px 250px;
+    
+}
