@@ -95,15 +95,15 @@ function displayCart() {
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
             <div class="products">
-            <ion-icon name="close-circle"></ion-icon>
+            <a class="remouv${item.tag}" href="#" ><ion-icon name="close-circle"></ion-icon></a>
                 <img class="prodpicscart" src="./image/${item.tag}.png">
                 <span>${item.name}</span>
             </div>
             <div class="price">${item.price}</div>
             <div class="quantity">
-                <ion-icon name="remove-circle"></ion-icon>
+                <a href="#" class="sous${item.tag}"><ion-icon href="#" name="remove-circle"></ion-icon></a>
                 <span>${item.inCart}<span>
-                <ion-icon name="add-circle"></ion-icon>
+                <a href="#" class="add${item.tag}"><ion-icon name="add-circle"></ion-icon></a>
             </div>
             <div class="total">
                 ${item.inCart*item.price}
@@ -121,6 +121,10 @@ function displayCart() {
                 </h4>
         `
     }
+}
+
+function remouvCart(product){
+    console.log("vous tentez de suppr",product);
 }
 displayCart();
 onLoadCartNumber();
