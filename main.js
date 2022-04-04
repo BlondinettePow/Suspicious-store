@@ -93,7 +93,7 @@ function displayCart() {
         productContainer.innerHTML='';
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
-            <div> class="productscartyup">
+            <div> class="products">
                 <ion-icon name="close-circle-outline"></ion-icon>
                 <img src="./image/${item.tag}.png">
                 <span>${item.name}</span>
