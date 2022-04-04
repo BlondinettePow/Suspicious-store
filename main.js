@@ -93,10 +93,15 @@ function displayCart() {
         productContainer.innerHTML='';
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
-            <div> class="products">
-                <ion-icon name="close-circle-outline"></ion-icon>
-                <img class="prodpics" src="./image/${item.tag}.png">
+            <div class="products">
+            <ion-icon name="close-circle"></ion-icon>
+                <img class="prodpicscart" src="./image/${item.tag}.png">
                 <span>${item.name}</span>
+            </div>
+            <div class="price">${item.price}</div>
+            <div class="quantity">
+                <ion-icon name="remove-circle"></ion-icon>
+                <span>${item.inCart}<span>
             </div>
             `
         })
