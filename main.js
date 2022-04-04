@@ -86,7 +86,7 @@ function totalCost(product){
 function displayCart() {
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
-    let productContainer = document.querySelector(".products-container");
+    let productContainer = document.querySelector(".products");
     console.log(cartItems);
 
     if(cartItems && productContainer){
@@ -95,7 +95,7 @@ function displayCart() {
             productContainer.innerHTML += `
             <div> class="products">
                 <ion-icon name="close-circle-outline"></ion-icon>
-                <img src="./image/${item.tag}.png">
+                <img class="prodpics" src="./image/${item.tag}.png">
                 <span>${item.name}</span>
             </div>
             `
