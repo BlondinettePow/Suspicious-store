@@ -87,7 +87,7 @@ function displayCart() {
     let cartItems = localStorage.getItem("productsInCart");
     let cartCost = localStorage.getItem('totalCost');
     cartItems = JSON.parse(cartItems);
-    let productContainer = document.querySelector(".products");
+    let productContainer = document.querySelector(".productsCart");
     console.log(cartItems);
 
     if(cartItems && productContainer){
