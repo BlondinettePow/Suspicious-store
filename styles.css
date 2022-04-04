@@ -165,3 +165,24 @@ li a {
     width: 150px;
     height: 200px;
 }
+
+/*---------Desc+About pages ------------*/
+.monkeydescimg{
+    width: auto;
+    height: auto;
+    margin-left: 15px;
+}
+.descprix{
+    float: right;
+    margin: 0px 500px;
+    margin-top: -500px;
+    font-size:100px;
+    color: red;
+}
+.descparagraph{
+    float: right;
+    margin: 0px 500px;
+    margin-top: -300px;
+    font-size:28px;
+    color: blue;
+}
