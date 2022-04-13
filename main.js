@@ -26,6 +26,7 @@ for (let i=0; i < carts.length; i++){
         totalCost(products[i]);
     })
 }
+
 function onLoadCartNumber(){
     let productNumber = localStorage.getItem('cartNumber');
     if(productNumber){
