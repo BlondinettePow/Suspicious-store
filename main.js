@@ -84,7 +84,7 @@ function totalCost(product){
     }
 }
 
-function displayCart() {
+/*function displayCart() {
     let cartItems = localStorage.getItem("productsInCart");
     let cartCost = localStorage.getItem('totalCost');
     cartItems = JSON.parse(cartItems);
@@ -123,9 +123,5 @@ function displayCart() {
         `
     }
 }
-
-function remouvCart(product){
-    console.log("vous tentez de suppr",product);
-}
-displayCart();
+displayCart();*/
 onLoadCartNumber();
