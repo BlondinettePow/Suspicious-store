@@ -26,7 +26,6 @@ for (let i=0; i < carts.length; i++){
         totalCost(products[i]);
     })
 }
-
 function onLoadCartNumber(){
     let productNumber = localStorage.getItem('cartNumber');
     if(productNumber){
@@ -84,7 +83,7 @@ function totalCost(product){
     }
 }
 
-/*function displayCart() {
+function displayCart() {
     let cartItems = localStorage.getItem("productsInCart");
     let cartCost = localStorage.getItem('totalCost');
     cartItems = JSON.parse(cartItems);
@@ -96,15 +95,15 @@ function totalCost(product){
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
             <div class="products">
-            <a class="remouv${item.tag}" href="#" ><ion-icon name="close-circle"></ion-icon></a>
+            <a class="remouv ${item.tag}" href="#" ><ion-icon name="close-circle"></ion-icon></a>
                 <img class="prodpicscart" src="./image/${item.tag}.png">
                 <span>${item.name}</span>
             </div>
             <div class="price">${item.price}</div>
             <div class="quantity">
-                <a href="#" class="sous${item.tag}"><ion-icon href="#" name="remove-circle"></ion-icon></a>
+                <a href="#" class="sous ${item.tag}"><ion-icon href="#" name="remove-circle"></ion-icon></a>
                 <span>${item.inCart}<span>
-                <a href="#" class="add${item.tag}"><ion-icon name="add-circle"></ion-icon></a>
+                <a href="#" class="add ${item.tag}"><ion-icon name="add-circle"></ion-icon></a>
             </div>
             <div class="total">
                 ${item.inCart*item.price}
@@ -120,8 +119,9 @@ function totalCost(product){
                 <h4 class="basketTotal">
                     $${cartCost}
                 </h4>
+            </div>
         `
     }
 }
-displayCart();*/
+displayCart();
 onLoadCartNumber();
